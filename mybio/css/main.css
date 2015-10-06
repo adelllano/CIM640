@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial'; 'Helvetica'; sans-serif;
+    background: #EBE6EB;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #330033;
+    color: white;
+    text-align:center;
+}
+
+img {
+    float: right;
+    margin: 0 20px 10px 20px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+p {
+    color: #505050;
+    margin-left: 20px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+a {
+    color: #FF0000;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.class1 {
+    color: deepskyblue;
+}
