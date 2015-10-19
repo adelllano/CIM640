@@ -1,0 +1,66 @@
+body {
+	background:black;
+}
+.sign    {
+    width: 2200px;
+}
+
+.wrapper1 {
+    margin: 5em auto;
+    padding: 10px;
+    position: fixed;
+}
+
+.wrapper {
+    margin: 2em auto;
+    position: relative;
+}
+
+.car     {
+    position: relative;
+    top: 20px;
+    left: -350px;
+    
+    -webkit-animation-name: ride;
+    -moz-animation-name: ride;
+    -o-animation-name: ride;
+    animation-name: ride;
+    
+/*    how long the entire animation will last*/
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;
+    
+/*    number of times animation plays*/
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    aniamtion-iteration-count: 1;
+    
+/*    number of seconds animation starts*/
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+    
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+ @-webkit-keyframes ride {
+/*     splitting into percentage will allow you to stop the car and then have it continue*/
+            0% {-webkit-transform: translateX(Opx);}
+            50% {-webkit-transform: translateX(1140px);}
+            100% {-webkit-transform: translateX(2200px);}
+        }
+
+/*"to" and "from" will allow you to move the car once. when using this, it's a good idea to decrease animation duration*/
+/*
+        @-webkit-keyframes ride {
+            from {-webkit-transform: translateX(Opx);}
+            to {-webkit-transform: translateX(1140px);}
+        }
+*/
